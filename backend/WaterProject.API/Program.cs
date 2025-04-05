@@ -14,12 +14,12 @@ builder.Services.AddDbContext<BezosDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("BookConnection")));
 
 builder.Services.AddCors(options =>
-    options.AddPolicy("AllowReactAppBlah",
+    options.AddPolicy("AllowAll",
     policy => {
-        policy.WithOrigins("http://localhost:3000")
+        policy.AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials();
+            .AllowAnyHeader();
+            
     }));
 
 // builder.Services.AddCors(options =>
@@ -44,7 +44,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowReactAppBlah");
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 
