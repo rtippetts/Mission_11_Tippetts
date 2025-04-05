@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/e17d6bdf-5f07-4117-b7c2-03e46621c806/resourceGroups/appsvc_windows_eastus/providers/Microsoft.Web/sites/BezosBaze-Tippetts-Backend",
+    "appService.deploySubpath": "backend\\WaterProject.API\\publish"
+}

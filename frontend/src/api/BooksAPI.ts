@@ -5,7 +5,7 @@ interface FetchBooksResponse {
     totalNumBooks: number;
 }
 
-const API_URL = 'https://localhost:5000/bezos'
+const API_URL = 'https://bezosbaze-tippetts-backend-efd4cwcsehdmcth4.eastus-01.azurewebsites.net/bezos';
 
 export const fetchBooks = async (
     pageSize: number,
