@@ -18,10 +18,7 @@ export const fetchBooks = async (
         .map((cat) => `bookTypes=${encodeURIComponent(cat)}`)
         .join('&');
     
-    const response = await fetch(`${API_URL}/AllBooks?pageHowMany=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`, 
-    {
-        credentials: 'include',
-    });
+    const response = await fetch(`${API_URL}/AllBooks?pageHowMany=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`);
 
     if (!response.ok) {
         throw new Error('Failed to fetch books')
