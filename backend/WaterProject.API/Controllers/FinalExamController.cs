@@ -1,18 +1,18 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using BezosBase.API.Data;
+using FinalExam.API.Data;
 using System.Globalization;
 
-namespace BezosBase.API.Controllers
+namespace FinalExam.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class BezosController : ControllerBase
+    public class FinalExamController : ControllerBase
     {
 
-        private BezosDbContext _bezosContext;
-        public BezosController(BezosDbContext temp) => _bezosContext = temp;
+        private FinalExamDbContext _bezosContext;
+        public FinalExamController(FinalExamDbContext temp) => _bezosContext = temp;
 
         [HttpGet("AllBooks")]
         public IActionResult GetBooks(int pageHowMany = 10, int pageNum = 1)

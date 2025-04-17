@@ -20,7 +20,7 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
                 .map((cat) => `bookTypes=${encodeURIComponent(cat)}`)
                 .join('&');
 
-            const response = await fetch(`https://localhost:5000/bezos/AllBooks?pageHowMany=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`, 
+            const response = await fetch(`https://localhost:5000/finalexam/AllBooks?pageHowMany=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`, 
             {
                 credentials: 'include',
             });

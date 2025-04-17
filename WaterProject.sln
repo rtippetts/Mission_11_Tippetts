@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{6071A277-5D28-4531-BD5C-C2A4FF2850A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BezosBase.API", "backend\WaterProject.API\BezosBase.API.csproj", "{9FC2339C-C5D7-425A-84D7-6FD2C20365C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExam.API", "backend\WaterProject.API\FinalExam.API.csproj", "{9FC2339C-C5D7-425A-84D7-6FD2C20365C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

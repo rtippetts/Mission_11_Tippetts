@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BezosBase.API.Data;
+using FinalExam.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<BezosDbContext>(options =>
+builder.Services.AddDbContext<FinalExamDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("BookConnection")));
 
 builder.Services.AddCors(options =>

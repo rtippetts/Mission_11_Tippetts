@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BezosBase.API.Data
+namespace FinalExam.API.Data
 {
     public class Book
     {
